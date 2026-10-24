@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Katra Wellness — professional massage booking service in Katra. Comfort, Care, Convenience.">
+<title>Katra Wellness | Comfort, Care, Convenience</title>
+<style>
+:root{--ink:#20302a;--green:#234d3b;--sage:#eaf0e9;--cream:#fbfaf6;--gold:#c59b55;--muted:#65716b;--line:#dfe5de}
+*{box-sizing:border-box} body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+header{padding:20px 6%;display:flex;justify-content:space-between;align-items:center;gap:20px;border-bottom:1px solid var(--line);background:#fff}
+.brand{font-size:1.25rem;font-weight:800;letter-spacing:.04em;color:var(--green)} .brand small{display:block;font-size:.72rem;font-weight:500;color:var(--muted);letter-spacing:.02em}
+nav a{color:var(--ink);text-decoration:none;margin-left:18px;font-size:.92rem}
+.hero{padding:76px 6% 68px;background:linear-gradient(120deg,#eef3ed,#fbfaf6);border-bottom:1px solid var(--line)}
+.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.75rem;font-weight:700;color:#8a6a31}
+h1{font-family:Georgia,serif;font-weight:500;line-height:1.1;font-size:clamp(2.6rem,6vw,4.8rem);max-width:800px;margin:14px 0}
+.hero p{max-width:620px;color:var(--muted);font-size:1.08rem}
+.btn{display:inline-block;background:var(--green);color:#fff;padding:13px 20px;border-radius:5px;text-decoration:none;font-weight:700;border:0;cursor:pointer}
+.btn.secondary{background:transparent;color:var(--green);border:1px solid var(--green);margin-left:8px}
+section{padding:56px 6%;max-width:1200px;margin:auto}.section-head{max-width:680px;margin-bottom:26px}
+h2{font-family:Georgia,serif;font-size:2.1rem;font-weight:500;line-height:1.2;margin:8px 0 12px}
+.muted{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.card{background:#fff;border:1px solid var(--line);padding:24px;border-radius:8px}
+.card h3{margin:0 0 8px;font-size:1.08rem}.duration{color:#8a6a31;font-weight:700;font-size:.85rem}
+.note{background:var(--sage);border-left:4px solid var(--gold);padding:16px 18px;border-radius:4px}
+.booking{background:#fff;border:1px solid var(--line);border-radius:10px;padding:26px;max-width:760px}
+form{display:grid;grid-template-columns:1fr 1fr;gap:16px}label{font-size:.9rem;font-weight:700;display:block;margin-bottom:5px}
+input,select,textarea{width:100%;padding:12px;border:1px solid #cfd8cf;border-radius:5px;background:#fff;font:inherit;color:var(--ink)}
+.full{grid-column:1/-1}small{color:var(--muted)}footer{background:#20382d;color:#f4f5ef;padding:30px 6%;font-size:.9rem}footer p{margin:5px 0}
+@media(max-width:700px){header{align-items:flex-start;flex-direction:column}nav a{margin:0 14px 0 0}.hero{padding-top:52px}.grid{grid-template-columns:1fr}form{grid-template-columns:1fr}.full{grid-column:auto}.btn.secondary{margin:10px 0 0}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">KATRA WELLNESS<small>Comfort, Care, Convenience</small></div>
+  <nav><a href="#services">Services</a><a href="#booking">Book a Session</a><a href="#contact">Contact</a></nav>
+</header>
+<main>
+  <div class="hero">
+    <div class="eyebrow">Wellness bookings in Katra</div>
+    <h1>Your moment of comfort, arranged with care.</h1>
+    <p>Explore massage booking options in Katra, near the Vaishno Devi pilgrimage area. Tell us your preferred service, time and hotel details; we’ll contact you to confirm availability and the final price.</p>
+    <a class="btn" href="#booking">Request a Booking</a>
+    <a class="btn secondary" href="#services">View Services</a>
+  </div>
+  <section id="services">
+    <div class="section-head"><div class="eyebrow">Our services</div><h2>Choose the session that suits you</h2><p class="muted">Service availability depends on the provider and booking time. Prices will be shared and confirmed before the booking is accepted.</p></div>
+    <div class="grid">
+      <article class="card"><div class="duration">30 MINUTES</div><h3>Head &amp; Foot Massage</h3><p class="muted">A short relaxation session focused on the head or feet. Exact service details to be confirmed when booking.</p></article>
+      <article class="card"><div class="duration">60 MINUTES</div><h3>Oil Massage</h3><p class="muted">A one-hour oil massage session, subject to provider availability and confirmation.</p></article>
+      <article class="card"><div class="duration">90 MINUTES</div><h3>Extended Massage Session</h3><p class="muted">Ask about longer session options and available massage types before confirming.</p></article>
+    </div>
+    <p class="note" style="margin-top:20px"><strong>Clear pricing, no surprises.</strong> We confirm the service, duration, price and provider availability with you before accepting a booking.</p>
+  </section>
+  <section id="booking">
+    <div class="section-head"><div class="eyebrow">Booking request</div><h2>Request your appointment</h2><p class="muted">Fill in the details below. This demo form prepares a message for WhatsApp; it does not confirm a booking automatically.</p></div>
+    <div class="booking">
+      <form id="bookingForm">
+        <div><label for="name">Your name *</label><input id="name" required autocomplete="name" placeholder="Full name"></div>
+        <div><label for="phone">Phone / WhatsApp *</label><input id="phone" required inputmode="tel" autocomplete="tel" placeholder="Your contact number"></div>
+        <div><label for="service">Preferred service *</label><select id="service" required><option value="">Select a service</option><option>Head & Foot Massage — 30 minutes</option><option>Oil Massage — 60 minutes</option><option>Extended Massage Session — 90 minutes</option><option>Ask me about available options</option></select></div>
+        <div><label for="date">Preferred date and time *</label><input id="date" required type="datetime-local"></div>
+        <div class="full"><label for="hotel">Hotel name / area in Katra *</label><input id="hotel" required placeholder="Hotel name or nearby landmark"></div>
+        <div class="full"><label for="notes">Additional details (optional)</label><textarea id="notes" rows="3" placeholder="Any timing or service preferences"></textarea></div>
+        <div class="full"><button class="btn" type="submit">Prepare WhatsApp Booking Request</button><p id="status" class="muted" aria-live="polite"></p><small>Do not include sensitive medical information. Please wait for a written confirmation of availability and price.</small></div>
+      </form>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="section-head"><div class="eyebrow">Contact</div><h2>Let’s arrange your booking</h2><p class="muted">Katra, Jammu &amp; Kashmir</p></div>
+    <div class="note">For now, the business WhatsApp number still needs to be added before this page can send booking requests. Use a dedicated business number, separate from your personal number.</div>
+  </section>
+</main>
+<footer><p><strong>Katra Wellness</strong> — Comfort, Care, Convenience</p><p>Massage booking service in Katra, Jammu &amp; Kashmir.</p><p>All bookings are subject to provider availability and explicit confirmation of service, duration and price.</p></footer>
+<script>
+const WHATSAPP_NUMBER = "91XXXXXXXXXX"; // Replace with business WhatsApp number, digits only.
+document.getElementById("bookingForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  const get = id => document.getElementById(id).value.trim();
+  const message = [
+    "Katra Wellness — Booking Request",
+    "Name: " + get("name"),
+    "Phone/WhatsApp: " + get("phone"),
+    "Service: " + get("service"),
+    "Preferred date/time: " + get("date"),
+    "Hotel/area: " + get("hotel"),
+    "Additional details: " + (get("notes") || "None"),
+    "",
+    "Please confirm availability and final price."
+  ].join("\n");
+  if (WHATSAPP_NUMBER.includes("X")) {
+    document.getElementById("status").textContent = "Setup needed: replace the placeholder business WhatsApp number in this page’s code before publishing.";
+    return;
+  }
+  window.open("https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message), "_blank", "noopener");
+});
+</script>
+</body>
+</html>
